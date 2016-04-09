@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Venditore</title>
+        <meta name=author content='Eleonora Garau'>
+        <meta name=description content='Pagine del venditore'>
+        <meta name=keywords content='online, venditore, store, collectibles, stock'>
+    </head>
+
+    <body> 
+        <div class="page">
+            <div class="barra">
+                <ul>
+                    <li><a href="login.html"> Login </a></li> 
+                    <li><a href="descrizione.html">Descrizione </a></li>
+                </ul>
+            </div>  
+            <div class="header">
+                <header>
+                     <h2> Inserimento Nuovo Oggetto </h2>
+                </header>
+            </div>
+
+            <div id="form">
+                <form action="pagina.php" method=post>
+                    <p>
+                        Nome Oggetto <input type=text name=nome  value='' placeholder='Inserire nome oggetto'/>
+                    </p>
+                    <p>
+                        URL immagine <input type=text name=url value='' placeholder='Inserire URL immagine'/> 
+                    </p>
+                    <p>
+                        Descrizione oggetto<br><br>
+                        <textarea rows=4 cols=20>  </textarea>
+                    </p>
+                    <p>
+                        Prezzo <input type=text name=prezzo value='' placeholder='Inserire prezzo'/> 
+                    </p>
+                    <p>
+                        Quantita' <input type=text name=quantita value='' placeholder='Inserire quantita'/>
+                    </p>
+                    <p><input type="submit" name="commit" value="Salva"></p>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <footer>
+                    <a href="www.facebook.com" title="seguici su Facebook">
+                        <img src="Immagini/facebookLogo.png" class="IMGlink" alt="Facebook"/></a>
+                    <a href="www.twitter.com" title="seguici su Twitter">
+                        <img src="Immagini/Twitterlogo.png" class="IMGlink" alt="twitter"/></a>
+            </footer>
+        </div>
+    </body>
+</html>
