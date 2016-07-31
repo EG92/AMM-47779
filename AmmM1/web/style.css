@@ -1,0 +1,379 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-mar-2016, 15.54.18
+    Author     : Eleonora
+*/
+
+
+
+body {
+    background-color: #f8f8f8;
+    padding: 0;
+    font: 14px Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+footer{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;  
+}
+
+.IMGlink {
+        height: 25px;
+        width: 25px;
+    }
+
+/*-----------------------------------------------------------------------NAVIGATOR BAR------------------------------------------------------------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+li {
+    float: right;
+    margin: auto;
+    padding: 14px 30px;
+}
+
+li a {
+    display: block;
+    width: 60px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #ccc;
+}
+
+accessoutente {
+    text-align: center;
+    float:left;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+}
+
+p {
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------H------------------------------------------------------------------------*/
+h1 {
+    font: 50px Arial, sans-serif;
+    vertical-align: middle;
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    background-repeat: no-repeat;
+    font: 30px Arial, sans-serif;
+    vertical-align: middle;
+    color: saddlebrown;
+    text-align: center;
+}
+
+h3 {
+    background-repeat: no-repeat;
+    font: 20px Arial, sans-serif;
+    vertical-align: middle;
+    color: chocolate;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------A-----------------------------------------------------------------------*/
+
+a{
+    font: Arial, sans-serif;
+    color: darkslategray;
+    /*text-align: center;*/
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: black;
+}
+
+/*-----------------------------------------------------------------------FORM----------------------------------------------------------------------------*/
+#form{
+    padding: 25px;
+    text-align: center;
+}
+
+
+input[type=text]:focus {
+    border: 1px solid #555;
+}
+
+input[type=submit]:focus {
+    border: 1px solid #555;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: saddlebrown; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------TABLE----------------------------------------------------------------------*/
+table, th, td, tr{
+   border-collapse: collapse;
+   text-align: center;
+   padding: 15px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+tr {
+   background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+/*-------------------------------------------------------------------RESPONSIVE---------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Per larghezze minori o uguali a 1024px utilizzare un layout ad una sola colonna*/
+
+@media only screen and (min-width: 1024px) {
+    
+    input[type=text] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=password] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        width: 60%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+    
+    .container{
+        height: 80%;
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    
+    .barra {
+        height: 10%;
+        padding-bottom: 0;
+    }
+    
+    .footer{
+        height: 10%;
+        padding-top: 0;       
+    }
+    
+    .header {
+        padding-top: 5%;    
+    }
+    
+    .menu {
+        width: 15%;
+        height: 100%;
+        margin-top: 0;
+        float: left;
+        padding: 10px;
+    }
+    
+    .main {
+        width: 85%;
+        height: 100%;
+        float: right;
+        padding: 15px;
+    }
+    
+}
+
+
+/* intermedi */
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    
+    input[type=text] {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=password] {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        width: 40%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+ 
+    .page{
+       width: 100%;
+    }
+    
+    .container{
+        height: 100%;
+        margin-top: 35px;
+    }
+    
+    .barra {
+        height: 10%;
+        padding-bottom: 0;
+    }
+    
+    .footer{
+        height: 10%;
+        padding-top: 0;       
+    }
+    
+    .header {
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .menu {
+        width: 15%;
+        height: 100%;
+        margin-top: 30px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .main {
+        width: 85%;
+        height: 100%;
+        float: right;
+        padding: 15px;
+    } 
+    
+    
+}
+
+
+/*Per larghezze minori o uguali a 480px utilizzare un layout ad una sola colonna*/
+@media only screen and (max-width: 480px) {
+    
+
+    input[type=text] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=password] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        width: 90%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+    
+    table{
+        width: 50%;
+        height: 50%;
+    }
+
+    .container{
+        height: 100%;
+        margin-top: 35px;
+    }
+    .barra {
+        height: 8%;
+        padding-bottom: 0;
+    }
+    
+    .footer{
+        height: 10%;
+        padding-top: 0;       
+    }
+    
+    .header {
+        padding-top: 10%;
+    }
+    .menu {
+        width: 100%;
+        margin-top: 55px;
+        text-align: center;
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+    
+}
+
+
